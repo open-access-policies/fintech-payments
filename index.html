@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PCI DSS, SOC 2, GLBA, BSA/AML Compliant ISMS for Fintech Companies - Open Access Policies">
+  <title>Fintech Payments - Open Access Policies</title>
+  <link rel="icon" type="image/png" href="https://openaccesspolicies.org/assets/img/logo.png">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/latin-modern-fonts.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+<a href="#main" class="skip-nav">Skip to main content</a>
+
+<header class="site-header">
+  <div class="header-container">
+    <div class="header-left">
+      <a href="https://openaccesspolicies.org" class="site-title">Open Access Policies</a>
+      <a href="#" class="policy-set-title">Fintech Payments</a>
+    </div>
+    <nav class="site-nav" aria-label="Main">
+      <a href="https://openaccesspolicies.org/policies.html">All Policies</a>
+      <a href="https://openaccesspolicies.org/start.html">Get Started</a>
+      <a href="https://openaccesspolicies.org/about.html">About</a>
+    </nav>
+    <button class="mobile-menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="layout-wrapper">
+  <aside class="sidebar" id="sidebar">
+    <nav class="sidebar-nav" aria-label="Policy navigation">
+
+      <!-- Access Control -->
+      <div class="nav-section">
+        <button class="nav-section-toggle" aria-expanded="false">
+          <span>Access Control</span>
+          <svg class="chevron" viewBox="0 0 24 24" width="16" height="16"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+        <ul class="nav-section-items collapsed">
+          <li class="nav-category">Policies</li>
+          <li><a href="#access_control_policies/AC-POL-001">Access Control Policy</a></li>
+          <li><a href="#access_control_policies/AC-POL-002">Acceptable Use Policy</a></li>
+          <li class="nav-category">Procedures</li>
+          <li><a href="#access_control_procedures/AC-PROC-001">User Access Provisioning</a></li>
+          <li><a href="#access_control_procedures/AC-PROC-002">Access Review</a></li>
+          <li><a href="#access_control_procedures/AC-PROC-003">Privileged Access Management</a></li>
+          <li><a href="#access_control_procedures/AC-PROC-004">MFA Enrollment</a></li>
+        </ul>
+      </div>
+
+      <!-- Security -->
+      <div class="nav-section">
+        <button class="nav-section-toggle" aria-expanded="false">
+          <span>Security</span>
+          <svg class="chevron" viewBox="0 0 24 24" width="16" height="16"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+        <ul class="nav-section-items collapsed">
+          <li class="nav-category">Policies</li>
+          <li><a href="#security_policies/SEC-POL-001">Information Security Policy</a></li>
+          <li><a href="#security_policies/SEC-POL-003">Risk Management Policy</a></li>
+          <li><a href="#security_policies/SEC-POL-004">Data Classification Policy</a></li>
+          <li><a href="#security_policies/SEC-POL-005">Security Logging & Monitoring</a></li>
+          <li><a href="#security_policies/SEC-POL-006">Physical Security Policy</a></li>
+          <li><a href="#security_policies/SEC-POL-007">Vendor Risk Management</a></li>
+          <li><a href="#security_policies/SEC-POL-008">Vulnerability Management</a></li>
+          <li><a href="#security_policies/SEC-POL-009">Network Security Policy</a></li>
+          <li class="nav-category">Procedures</li>
+          <li><a href="#security_procedures/SEC-PROC-002">Risk Assessment</a></li>
+          <li><a href="#security_procedures/SEC-PROC-003">Internal Audit</a></li>
+          <li><a href="#security_procedures/SEC-PROC-004">Vendor Assessment</a></li>
+          <li><a href="#security_procedures/SEC-PROC-005">Security Awareness Training</a></li>
+          <li><a href="#security_procedures/SEC-PROC-006">Penetration Testing</a></li>
+          <li><a href="#security_procedures/SEC-PROC-008">Vulnerability Scanning</a></li>
+          <li><a href="#security_procedures/SEC-PROC-009">Security Exception</a></li>
+        </ul>
+      </div>
+
+      <!-- Payment Security -->
+      <div class="nav-section">
+        <button class="nav-section-toggle" aria-expanded="false">
+          <span>Payment Security</span>
+          <svg class="chevron" viewBox="0 0 24 24" width="16" height="16"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+        <ul class="nav-section-items collapsed">
+          <li class="nav-category">Policies</li>
+          <li><a href="#payment_security_policies/PAY-POL-001">Cardholder Data Protection</a></li>
+          <li><a href="#payment_security_policies/PAY-POL-002">PCI DSS Compliance</a></li>
+          <li><a href="#payment_security_policies/PAY-POL-003">Transaction Monitoring & Fraud</a></li>
+          <li><a href="#payment_security_policies/PAY-POL-004">Tokenization & Data Masking</a></li>
+          <li><a href="#payment_security_policies/PAY-POL-005">Point-of-Sale Security</a></li>
+          <li class="nav-category">Procedures</li>
+          <li><a href="#payment_security_procedures/PAY-PROC-001">CDE Scoping</a></li>
+          <li><a href="#payment_security_procedures/PAY-PROC-002">PCI DSS Self-Assessment</a></li>
+          <li><a href="#payment_security_procedures/PAY-PROC-003">Card Data Discovery</a></li>
+          <li><a href="#payment_security_procedures/PAY-PROC-004">Fraud Alert Response</a></li>
+          <li><a href="#payment_security_procedures/PAY-PROC-005">POS Security Inspection</a></li>
+          <li><a href="#payment_security_procedures/PAY-PROC-006">Payment Gateway Integration</a></li>
+        </ul>
+      </div>
+
+      <!-- Financial Operations -->
+      <div class="nav-section">
+        <button class="nav-section-toggle" aria-expanded="false">
+          <span>Financial Operations</span>
+          <svg class="chevron" viewBox="0 0 24 24" width="16" height="16"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+        <ul class="nav-section-items collapsed">
+          <li class="nav-category">Policies</li>
+          <li><a href="#financial_operations_policies/FIN-POL-001">Anti-Money Laundering (AML)</a></li>
+          <li><a href="#financial_operations_policies/FIN-POL-002">Customer Due Diligence (KYC/CDD)</a></li>
+          <li><a href="#financial_operations_policies/FIN-POL-003">OFAC Sanctions Compliance</a></li>
+          <li><a href="#financial_operations_policies/FIN-POL-004">Money Movement & Funds Transfer</a></li>
+          <li class="nav-category">Procedures</li>
+          <li><a href="#financial_operations_procedures/FIN-PROC-001">Customer Identification (CIP)</a></li>
+          <li><a href="#financial_operations_procedures/FIN-PROC-002">SAR Filing</a></li>
+          <li><a href="#financial_operations_procedures/FIN-PROC-003">OFAC Screening</a></li>
+          <li><a href="#financial_operations_procedures/FIN-PROC-004">Enhanced Due Diligence (EDD)</a></li>
+          <li><a href="#financial_operations_procedures/FIN-PROC-005">Transaction Monitoring Review</a></li>
+        </ul>
+      </div>
+
+      <!-- Engineering -->
+      <div class="nav-section">
+        <button class="nav-section-toggle" aria-expanded="false">
+          <span>Engineering</span>
+          <svg class="chevron" viewBox="0 0 24 24" width="16" height="16"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+        <ul class="nav-section-items collapsed">
+          <li class="nav-category">Policies</li>
+          <li><a href="#engineering_policies/ENG-POL-001">Secure Development</a></li>
+          <li><a href="#engineering_policies/ENG-POL-002">Change Management</a></li>
+          <li><a href="#engineering_policies/ENG-POL-003">Third-Party Software</a></li>
+          <li class="nav-category">Procedures</li>
+          <li><a href="#engineering_procedures/ENG-PROC-001">Application Security Testing</a></li>
+          <li><a href="#engineering_procedures/ENG-PROC-002">Secure Code Review</a></li>
+          <li><a href="#engineering_procedures/ENG-PROC-003">Change Request & Approval</a></li>
+          <li><a href="#engineering_procedures/ENG-PROC-004">Release Management</a></li>
+          <li><a href="#engineering_procedures/ENG-PROC-005">System Hardening</a></li>
+          <li><a href="#engineering_procedures/ENG-PROC-006">Software Dev Environment</a></li>
+        </ul>
+      </div>
+
+      <!-- Operational -->
+      <div class="nav-section">
+        <button class="nav-section-toggle" aria-expanded="false">
+          <span>Operational</span>
+          <svg class="chevron" viewBox="0 0 24 24" width="16" height="16"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+        <ul class="nav-section-items collapsed">
+          <li class="nav-category">Policies</li>
+          <li><a href="#operational_policies/OP-POL-001">Encryption & Key Management</a></li>
+          <li><a href="#operational_policies/OP-POL-002">Asset Management</a></li>
+          <li><a href="#operational_policies/OP-POL-003">Data Retention & Disposal</a></li>
+          <li><a href="#operational_policies/OP-POL-004">HR Security</a></li>
+          <li><a href="#operational_policies/OP-POL-005">Mobile Device Security</a></li>
+          <li><a href="#operational_policies/OP-POL-006">Acceptable Software</a></li>
+          <li class="nav-category">Procedures</li>
+          <li><a href="#operational_procedures/OP-PROC-001">Cryptographic Key Management</a></li>
+          <li><a href="#operational_procedures/OP-PROC-002">Asset Inventory</a></li>
+          <li><a href="#operational_procedures/OP-PROC-003">Data Retention</a></li>
+          <li><a href="#operational_procedures/OP-PROC-004">Secure Media Disposal</a></li>
+          <li><a href="#operational_procedures/OP-PROC-005">Legal Hold</a></li>
+          <li><a href="#operational_procedures/OP-PROC-006">Background Check</a></li>
+          <li><a href="#operational_procedures/OP-PROC-007">Onboarding/Offboarding</a></li>
+          <li><a href="#operational_procedures/OP-PROC-008">Disciplinary Action</a></li>
+        </ul>
+      </div>
+
+      <!-- Resilience -->
+      <div class="nav-section">
+        <button class="nav-section-toggle" aria-expanded="false">
+          <span>Resilience</span>
+          <svg class="chevron" viewBox="0 0 24 24" width="16" height="16"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+        <ul class="nav-section-items collapsed">
+          <li class="nav-category">Policies</li>
+          <li><a href="#resilience_policies/RES-POL-001">Incident Response</a></li>
+          <li><a href="#resilience_policies/RES-POL-002">Business Continuity</a></li>
+          <li class="nav-category">Procedures</li>
+          <li><a href="#resilience_procedures/RES-PROC-001">Incident Response Plan</a></li>
+          <li><a href="#resilience_procedures/RES-PROC-002">Disaster Recovery</a></li>
+          <li><a href="#resilience_procedures/RES-PROC-003">Backup & Recovery</a></li>
+        </ul>
+      </div>
+
+      <!-- Privacy -->
+      <div class="nav-section">
+        <button class="nav-section-toggle" aria-expanded="false">
+          <span>Privacy</span>
+          <svg class="chevron" viewBox="0 0 24 24" width="16" height="16"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+        <ul class="nav-section-items collapsed">
+          <li class="nav-category">Policies</li>
+          <li><a href="#privacy_policies/PRV-POL-001">Customer Privacy</a></li>
+          <li><a href="#privacy_policies/PRV-POL-002">NPI Protection</a></li>
+          <li class="nav-category">Procedures</li>
+          <li><a href="#privacy_procedures/PRV-PROC-001">Privacy Notice Delivery</a></li>
+        </ul>
+      </div>
+
+      <!-- Annexes -->
+      <div class="nav-section">
+        <button class="nav-section-toggle" aria-expanded="false">
+          <span>Annexes</span>
+          <svg class="chevron" viewBox="0 0 24 24" width="16" height="16"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+        <ul class="nav-section-items collapsed">
+          <li class="nav-category">Reference</li>
+          <li><a href="#annexes/ANNEX-001-glossary">Glossary</a></li>
+          <li><a href="#annexes/ANNEX-002-control-mapping-matrix">Control Mapping Matrix</a></li>
+          <li><a href="#annexes/ANNEX-003-placeholder-reference">Placeholder Reference</a></li>
+        </ul>
+      </div>
+
+    </nav>
+  </aside>
+
+  <main id="main" class="main-content">
+    <div class="content-container">
+      <article id="content" class="policy-content">
+        <!-- Content loaded dynamically -->
+      </article>
+    </div>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <p>&copy; 2026 Open Access Policies. Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA-4.0</a>.</p>
+  <div class="footer-links">
+    <a href="https://github.com/open-access-policies/fintech-payments">GitHub</a>
+    <a href="https://openaccesspolicies.org/about.html">About</a>
+  </div>
+</footer>
+
+<script>
+const CONFIG = {
+  defaultDoc: 'home',
+  homeContent: `
+# Fintech Payments Compliance Framework
+
+This framework provides a comprehensive Information Security Management System (ISMS) for fintech companies processing payments.
+
+## Compliance Coverage
+
+This policy set addresses requirements for:
+- **PCI DSS v4.0** - Payment Card Industry Data Security Standard
+- **SOC 2** - Trust Services Criteria
+- **GLBA** - Gramm-Leach-Bliley Act (Safeguards & Privacy Rules)
+- **BSA/AML** - Bank Secrecy Act / Anti-Money Laundering
+
+## Target Audience
+
+Series A-C fintech companies (50-500 employees):
+- Payment processors and gateways
+- Digital wallets and neobanks
+- Lending platforms (consumer, SMB, BNPL)
+- Money transfer and remittance services
+- Embedded finance providers
+
+## Getting Started
+
+Use the sidebar to navigate through policies and procedures organized by domain:
+
+- **Access Control** - Identity management, MFA, privileged access
+- **Security** - Risk, vulnerability, vendor, and network security
+- **Payment Security** - PCI DSS, cardholder data, tokenization, fraud prevention
+- **Financial Operations** - AML, KYC/CDD, OFAC, SAR procedures
+- **Engineering** - Secure development, change management
+- **Operational** - Encryption, assets, data retention, HR security
+- **Resilience** - Incident response, business continuity, disaster recovery
+- **Privacy** - GLBA Privacy Rule, NPI protection
+- **Annexes** - Glossary, control mappings, placeholder reference
+
+## Document Count
+
+| Category | Policies | Procedures |
+|----------|----------|------------|
+| Access Control | 2 | 4 |
+| Security | 8 | 7 |
+| Payment Security | 5 | 6 |
+| Financial Operations | 4 | 5 |
+| Engineering | 3 | 6 |
+| Operational | 6 | 8 |
+| Resilience | 2 | 3 |
+| Privacy | 2 | 1 |
+| **Total** | **32** | **40** |
+
+Plus 3 annexes for a total of **75 documents**.
+  `
+};
+
+let currentDoc = null;
+
+function parseFrontmatter(text) {
+  const match = text.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
+  if (match) {
+    const frontmatter = {};
+    match[1].split('\n').forEach(line => {
+      const [key, ...valueParts] = line.split(':');
+      if (key && valueParts.length) {
+        frontmatter[key.trim()] = valueParts.join(':').trim().replace(/^["']|["']$/g, '');
+      }
+    });
+    return { frontmatter, content: match[2] };
+  }
+  return { frontmatter: {}, content: text };
+}
+
+async function loadDocument(path) {
+  const contentEl = document.getElementById('content');
+
+  if (!path || path === 'home') {
+    contentEl.innerHTML = marked.parse(CONFIG.homeContent);
+    document.title = 'Fintech Payments - Open Access Policies';
+    updateActiveNav(null);
+    return;
+  }
+
+  try {
+    const parts = path.split('/');
+    const collection = parts[0];
+    const filename = parts[1];
+    const filePath = `${collection}/${filename}.md`;
+
+    const response = await fetch(filePath);
+    if (!response.ok) throw new Error('Document not found');
+
+    const text = await response.text();
+    const { frontmatter, content } = parseFrontmatter(text);
+
+    // Get title from frontmatter
+    const title = frontmatter.title || filename;
+
+    // Render markdown content
+    const renderedContent = marked.parse(content);
+
+    // Only add H1 from frontmatter if content doesn't already start with one
+    const hasH1 = content.trim().startsWith('# ');
+    contentEl.innerHTML = hasH1 ? renderedContent : `<h1>${title}</h1>` + renderedContent;
+    document.title = `${title} - Fintech Payments`;
+
+    updateActiveNav(path);
+    contentEl.scrollTop = 0;
+
+  } catch (error) {
+    contentEl.innerHTML = `
+      <div class="error-message">
+        <h2>Document Not Found</h2>
+        <p>The requested document could not be loaded.</p>
+        <p><a href="#">Return to home</a></p>
+      </div>
+    `;
+  }
+}
+
+function updateActiveNav(path) {
+  document.querySelectorAll('.sidebar-nav a').forEach(a => a.classList.remove('active'));
+
+  if (path) {
+    const activeLink = document.querySelector(`.sidebar-nav a[href="#${path}"]`);
+    if (activeLink) {
+      activeLink.classList.add('active');
+      const section = activeLink.closest('.nav-section');
+      if (section) {
+        const toggle = section.querySelector('.nav-section-toggle');
+        const items = section.querySelector('.nav-section-items');
+        if (items.classList.contains('collapsed')) {
+          toggle.setAttribute('aria-expanded', 'true');
+          items.classList.remove('collapsed');
+        }
+      }
+    }
+  }
+}
+
+function setupNavToggles() {
+  document.querySelectorAll('.nav-section-toggle').forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', !expanded);
+      toggle.nextElementSibling.classList.toggle('collapsed');
+    });
+  });
+}
+
+function setupMobileMenu() {
+  const menuToggle = document.querySelector('.mobile-menu-toggle');
+  const sidebar = document.getElementById('sidebar');
+
+  menuToggle?.addEventListener('click', () => {
+    const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+    menuToggle.setAttribute('aria-expanded', !expanded);
+    sidebar.classList.toggle('open');
+    document.body.classList.toggle('sidebar-open');
+  });
+
+  sidebar?.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth <= 768) {
+        menuToggle?.setAttribute('aria-expanded', 'false');
+        sidebar.classList.remove('open');
+        document.body.classList.remove('sidebar-open');
+      }
+    });
+  });
+}
+
+function handleHashChange() {
+  const hash = window.location.hash.slice(1);
+  loadDocument(hash || 'home');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  setupNavToggles();
+  setupMobileMenu();
+  handleHashChange();
+});
+
+window.addEventListener('hashchange', handleHashChange);
+</script>
+
+</body>
+</html>

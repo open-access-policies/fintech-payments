@@ -1,0 +1,71 @@
+# --- Site Settings ---
+title: "Fintech Payments Compliance Framework"
+description: "PCI DSS, SOC 2, GLBA, BSA/AML Compliant ISMS for Fintech Companies"
+baseurl: "/fintech-payments"
+
+# --- Hydejack Specific Settings ---
+hydejack:
+  theme: theme-base-08
+  sticky_sidebar: true
+  accent_color: "#bababa"
+  invert_sidebar: false
+
+# --- Favicon Settings ---
+favicon: /fintech-payments/assets/images/logo.png
+
+# --- Search ---
+search: true
+
+# --- Navigation ---
+sidebar_links:
+  - title: Home
+    url: /
+  - title: Access Control
+    url: /access_control_policies/AC-POL-001
+  - title: Security
+    url: /security_policies/SEC-POL-001
+  - title: Payment Security
+    url: /payment_security_policies/PAY-POL-001
+  - title: Financial Operations
+    url: /financial_operations_policies/FIN-POL-001
+  - title: Engineering
+    url: /engineering_policies/ENG-POL-001
+  - title: Operational
+    url: /operational_policies/OP-POL-001
+  - title: Resilience
+    url: /resilience_policies/RES-POL-001
+  - title: Privacy
+    url: /privacy_policies/PRV-POL-001
+  - title: Annexes
+    url: /annexes/ANNEX-001-glossary
+
+# --- Defaults ---
+defaults:
+  - scope:
+      path: ""
+    values:
+      hide_title: true
+      no_page_title: true
+      accent_color: "#bababa"
+
+# --- Build settings ---
+remote_theme: "hydecorp/hydejack@v9.2.1"
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-remote-theme
+
+author:
+  name   : "Sean Todd"
+  avatar : "/assets/images/headshot.jpg"
+  bio    : "A helpful CISO looking for his next challenge."
+  links  :
+    - label: "GitHub"
+      url: "https://github.com/descentintomael"
+    - label: "LinkedIn"
+      url: "https://www.linkedin.com/in/seanmtodd/"
+  social:
+    github: open-access-policies
+    email: mailto:sean@openaccesspolicies.org
+    linkedin: https://www.linkedin.com/in/seanmtodd
